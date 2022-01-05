@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Libre+Franklin:ital,wght@0,300;0,600;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,19 +15,31 @@
   </style>
 </head>
 <body>
+  <main>
+    <header class="logo">
+        <img class="iLogo" src="./images/logo.svg" alt="ping Logo">
+      </header>
 
-  We are launching soon!
+      <article class="contact">
+        <h1>We are launching soon!</h1>
+        <h4>Subscribe and get notified</h4>
+        <form action="get">
+          <input type="text" placeholder="Your email address" class="email">
+          <input type="button" value="Notify Me" class="button">
+        </form>
+      </article>
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+      <article class="details">
+        <img src="./images/illustration-dashboard.png" alt="Ilustration" class="graphic">
+      </article>
+  </main>
+  
 
   <footer>
     <p class="attribution">
+      &copy; Copyright Ping. All rights reserved.<br/>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io?ref=challenge">HualDev</a>.
     </p>
   </footer>
 </body>
