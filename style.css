@@ -17,7 +17,8 @@ main{
     height: auto;
     justify-content: center;
     align-items: center;
-    
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
 }
 
 .iLogo{
@@ -29,11 +30,18 @@ main{
 h1{
     margin-bottom:0 ;
     text-align: center;
+    color: var(--gray);
+}
+
+.soon{
+    display: inline;
+    color: var(--veryDarkBlue);
 }
 
 h4{
     text-align: center;
     margin-top: 15px;
+    color: var(--gray);
 }
 
 .email{
@@ -42,13 +50,13 @@ h4{
     height: 40px;
     border-radius: 20px;
     padding-left: 25px;
-    outline-color: var(--paleBlue);
-    border: solid 2px var(--paleBlue);
+    /*outline-color: var(--paleBlue);*/
+    border: solid 3px rgb(250, 245, 245);
     margin: 40px auto 10px;
 }
 
 ::placeholder{
-    color: var(--paleBlue);
+    color: rgb(238, 231, 231);
 }
 
 .button{
@@ -68,4 +76,42 @@ h4{
     width: 95%;
     height: 90%;
     margin: 50px auto;
+}
+
+.social{
+    display: flex;
+     color: var(--blue);   
+    padding: 50px 80px 20px;
+}
+
+.network{
+    border: solid 2px rgb(241, 237, 237);
+    padding: 8px;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+@media(min-width:600px){
+    
+    h1{
+        font-size: 60px;
+    }
+
+    .email{
+        display: inline;
+        width: 70%;
+    }
+
+    .button{
+        display: inline;
+        width: 29%;
+    }
+
+    .graphic{
+        width: 60%;
+    }
 }

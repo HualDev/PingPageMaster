@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Ping coming soon page</title>
-
+  <script src="https://kit.fontawesome.com/8b6237c08b.js" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -21,7 +21,7 @@
       </header>
 
       <article class="contact">
-        <h1>We are launching soon!</h1>
+        <h1>We are launching <p class="soon"><strong> soon!</strong></p> </h1>
         <h4>Subscribe and get notified</h4>
         <form action="get">
           <input type="text" placeholder="Your email address" class="email">
@@ -32,6 +32,22 @@
       <article class="details">
         <img src="./images/illustration-dashboard.png" alt="Ilustration" class="graphic">
       </article>
+
+      <div class="social">
+
+        <div class="network" id="face" onmouseover="hover()" onmouseout="notHover()">
+          <i class="fab fa-facebook-f" ></i>
+          
+        </div>
+
+        <div class="network" id="twitter" onmouseover="hoverT()" onmouseout="notHoverT()">
+          <i class="fab fa-twitter" ></i>
+        </div>
+
+        <div class="network" id="insta" onmouseover="hoverI()" onmouseout="notHoverI()">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
   </main>
   
 
@@ -42,5 +58,7 @@
       Coded by <a href="https://www.frontendmentor.io?ref=challenge">HualDev</a>.
     </p>
   </footer>
+
+  <script src="./ping.js"></script>
 </body>
 </html>
