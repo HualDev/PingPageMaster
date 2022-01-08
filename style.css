@@ -52,11 +52,20 @@ h4{
     padding-left: 25px;
     /*outline-color: var(--paleBlue);*/
     border: solid 3px rgb(250, 245, 245);
-    margin: 40px auto 10px;
+    margin: 40px auto 5px;
 }
 
 ::placeholder{
     color: rgb(238, 231, 231);
+}
+
+.error{
+    display: flex;
+    color: red;
+    font-size: 9px;
+    margin-bottom: 20px;    
+    justify-content: center;
+    visibility: hidden;    
 }
 
 .button{
@@ -106,9 +115,20 @@ h4{
         width: 70%;
     }
 
+    .error{
+        position: relative;
+        top: 10px;
+        font-size: 12px;
+        left: -205px;
+        margin-bottom: 0;        
+    }
+
     .button{
         display: inline;
         width: 29%;
+        position: relative;
+        left: 480px;
+        top: -70px;
     }
 
     .graphic{

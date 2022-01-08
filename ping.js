@@ -30,3 +30,15 @@ function notHoverI(){
     document.getElementById('insta').style.background='white'
     document.getElementById('insta').style.color='hsl(223, 87%, 63%)'
 }
+
+function pruebaemail (valor){
+	re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+	if(!re.exec(valor)){
+		
+        document.getElementById('error').style.visibility='visible'
+        document.getElementById('correo').style.borderColor='red'
+        document.getElementById('correo').placeholder='example@email.com'
+        
+	}
+	
+	}

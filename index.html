@@ -24,8 +24,9 @@
         <h1>We are launching <p class="soon"><strong> soon!</strong></p> </h1>
         <h4>Subscribe and get notified</h4>
         <form action="get">
-          <input type="text" placeholder="Your email address" class="email">
-          <input type="button" value="Notify Me" class="button">
+          <input form="email" type="text" placeholder="Your email address" class="email" id="correo">
+          <label for="email" class="error" id="error">Please provide a valid email address</label>
+          <input type="button" value="Notify Me" class="button" onClick="pruebaemail(correo.value)">
         </form>
       </article>
 
